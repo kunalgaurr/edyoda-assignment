@@ -1,0 +1,213 @@
+#form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--text-4);
+  gap: 15px;
+  color: #000000;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: var(--font-1);
+  width: 80%;
+  color: var(--text-2);
+  margin-top: 40px;
+}
+
+#progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.progress-bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar-number {
+  background-color: var(--primary-1);
+  aspect-ratio: 1/1;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50px;
+  color: var(--text-4);
+}
+
+#form-header {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid grey;
+  color: grey;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+label:disabled {
+  background-color: var(--disabled);
+}
+
+#expiry-message {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  background-color: tomato;
+  padding: 2px 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 5px;
+  color: white;
+}
+#recommendation-message {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  background-color: var(--success);
+  padding: 2px 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 5px;
+  color: white;
+}
+
+.input-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#subscription-costs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+input[type='radio'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--text-2);
+  outline: none;
+}
+
+input[type='radio']:checked {
+  background-color: var(--success);
+  border: none;
+}
+
+input[type='radio']:checked::before {
+  content: '\2705';
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.actual-cost {
+  font-size: 10px;
+}
+
+.actual-cost > span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.discount {
+  font-size: 10px;
+  color: var(--text-3);
+}
+
+.discount > span {
+  font-weight: 500;
+  font-size: 15px;
+  color: grey;
+}
+
+#summary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+#alert {
+  display: flex;
+  justify-content: space-between;
+  background: var(--alert-fill);
+  padding: 5px 10px;
+  box-sizing: none;
+  color: var(--danger-2);
+  border-width: 2px;
+  border-style: solid;
+  border-image: var(--alert-border) 1;
+}
+
+#alert-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#alert-heading {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text > span {
+  font-weight: 500;
+}
+
+#button-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button {
+  height: 45px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--font-1);
+  cursor: pointer;
+}
+
+#cancel-button {
+  border: 2px solid var(--danger-2);
+  color: var(--danger-2);
+}
+
+#proceed-button {
+  background-color: var(--success);
+  border: none;
+  color: white;
+}
