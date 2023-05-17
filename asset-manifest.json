@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/edyoda-assignment-live/static/css/main.9b181135.css",
+    "main.js": "/edyoda-assignment-live/static/js/main.c77020b8.js",
+    "static/media/Back Ground.png": "/edyoda-assignment-live/static/media/Back Ground.05bb78067e5e40e6d467.png",
+    "index.html": "/edyoda-assignment-live/index.html",
+    "main.9b181135.css.map": "/edyoda-assignment-live/static/css/main.9b181135.css.map",
+    "main.c77020b8.js.map": "/edyoda-assignment-live/static/js/main.c77020b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b181135.css",
+    "static/js/main.c77020b8.js"
+  ]
+}
